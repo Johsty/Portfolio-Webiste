@@ -10,8 +10,55 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-color: darkslategray;
+                color:whitesmoke
+            }
+                .sidenav {
+                height: 100%;
+                width: 280px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+                }
+
+                .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: whitesmoke;
+                display: block;
+                }
+
+                .sidenav a:hover {
+                color: #f1f1f1;
+                }
+
+                .main {
+                margin-left: 160px; /* Same as the width of the sidenav */
+                font-size: 28px; /* Increased text to enable scrolling */
+                padding: 0px 10px;
+                }
+
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+                }
+        </style>
     </head>
     <body>
-        <h1>Johsty's Portfolio</h1>
+        <hr size="10">
+        <h1 style="text-align: center;">Johsty's Portfolio</h1>
+        <hr size="10">
+        <div class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Past Work</a>
+            <a href="#">Resume/Transcript</a>
+          </div>
     </body>
 </html>
